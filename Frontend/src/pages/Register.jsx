@@ -336,7 +336,7 @@ export default function RegisterPage() {
                             required
                         >
                             <option value="" disabled>Select your role</option>
-                            <option value="Managert">Manager</option>
+                            <option value="Manager">Manager</option>
                             <option value="Operational Manager">Operational Manager</option>
                             <option value="Associate Manager">Associate Manager</option>
                             <option value="Team Leader">Team Leader</option>
