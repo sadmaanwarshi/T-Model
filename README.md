@@ -26,21 +26,6 @@ A scalable, **T-Model based application** designed to deliver a unique and tailo
 
 ---
 
-## 🏛️ The T-Model Architecture: The Core Logic
-
-This project's core logic is built on the **T-Model architecture**.  
-This model separates shared, common functionalities from specialized, industry-specific features, allowing for maximum code reuse and scalability.
-
-### The Base Layer (The Horizontal Bar)
-
-This is the shared foundation of the application. It contains all the logic and components that are common to every user, regardless of their industry.
-
-#### Shared Services (Backend):
-
-- **User Authentication** (Register, Login, JWT generation)
-- **Profile Management**
-- **Generic ScoreEngine**: A pure function that calculates a weighted score from any set of metrics.
-- **Central NotificationService**: A service responsible for the delivery of notifications (email, in-app) but not the logic of when to send them.
 
 #### Shared Components (Frontend):
 
