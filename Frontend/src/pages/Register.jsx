@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function RegisterPage() {
   const [form, setForm] = useState({ name: '', email: '', password: '', role: '' });
@@ -349,7 +349,7 @@ export default function RegisterPage() {
                 </form>
                 
                 <div className="signin-link">
-                    Already have an account? <a href="/login">Sign in here</a>
+                    Already have an account? <Link to="/login">Sign in here</Link>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { apiFetch } from "../api"; // Import the centralized API function
 
 export default function LoginPage({ onAuth }) {
@@ -82,7 +82,7 @@ export default function LoginPage({ onAuth }) {
                     <button type="submit" className="submit-btn">Sign In</button>
                 </form>
                 <div className="demo-credentials"><strong>Demo credentials:</strong><p onClick={() => handleDemoClick('tour@example.com', 'password')}>Tour: tour@example.com / password</p><p onClick={() => handleDemoClick('travel@example.com', 'password')}>Travel: travel@example.com / password</p><p onClick={() => handleDemoClick('logistics@example.com', 'password')}>Logistics: logistics@example.com / password</p></div>
-                <div className="signup-link">Don't have an account? <a href="/register">Create one here</a></div>
+                <div className="signup-link">Don't have an account? <Link to="/register">Create one here</Link></div>
             </div>
         </div>
       </div>
